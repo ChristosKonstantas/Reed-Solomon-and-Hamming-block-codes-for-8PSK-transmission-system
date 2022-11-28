@@ -38,11 +38,11 @@ we modulate and transmit these octal symbols with 8PSK as in step 5. Again, be c
 
 8. In all three transmission cases, the channel adds complex Gaussian noise of mean 0 and variance 1.
 
-9. For the non-coding case, in the receiver use the ML detector which has the form x = argmax {xi{Re{x* · y}}}. Next, get rid of it
+9. For the non-coding case, in the receiver use the ML detector which has the form xhat = argmax {xi{Re{x* · y}}}. Next, get rid of it
 Gray display via bi2gray.m function. Finally, calculate the number of
 errors made by the receiver in the info bits.
 
-10. For the case of Reed-Solomon coding, repeat the procedure of the previous step with the difference that instead of symbol-by-symbol ML detection you will implement block-by-block soft-decision decoding of the form xˆ = argmax {xi Re{c (xi) H · y}},
+10. For the case of Reed-Solomon coding, repeat the procedure of the previous step with the difference that instead of symbol-by-symbol ML detection you will implement block-by-block soft-decision decoding of the form xhat = argmax {xi Re{c (xi) H · y}},
 where each block c(xi) contains N = 7 received 8PSK symbols and corresponds to K = 5 info symbols contained in xi.
 
 11. For the case of Hamming coding, start with ML decoding and elimination of the Gray representation as in step 9 and follow with block-by-block hard-decision decoding, where each block contains n = 7 coded bits and corresponds to k = 4 info bits.
