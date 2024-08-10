@@ -47,3 +47,10 @@ where each block c(xi) contains N = 7 received 8PSK symbols and corresponds to K
 
 11. For the case of Hamming coding, start with ML decoding and elimination of the Gray representation as in step 9 and follow with block-by-block hard-decision decoding, where each block contains n = 7 coded bits and corresponds to k = 4 info bits.
 Repeat the above steps for values ​​of SNR per bit from 0dB to 14dB.
+
+
+
+Result:
+
+![image](https://github.com/user-attachments/assets/d887f0e2-8774-4ef3-9987-840aa9613c4b)
+
